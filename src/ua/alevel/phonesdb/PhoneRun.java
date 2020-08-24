@@ -141,13 +141,6 @@ public class PhoneRun {
         Phone phone = new Phone();
         System.out.println("Updating phone...");
 
-//            private String companyName;
-//            private String model;
-//            private int storageMemory;
-//            private double price;
-//            private double screenDiagonal;
-//            private String color;
-
         try {
             System.out.print("Input phone's ID: ");
             String id = reader.readLine();
@@ -203,7 +196,7 @@ public class PhoneRun {
 
     private void searchPhones(BufferedReader reader) {
         System.out.println("Searching phones...");
-        System.out.println("\nChoose criteria, please: ");
+        System.out.println("Choose criteria, please: ");
         System.out.println("0 - Phone's ID");
         System.out.println("1 - Company name");
         System.out.println("2 - Model");
@@ -213,7 +206,7 @@ public class PhoneRun {
         System.out.println("6 - Screen diagonal (definite)");
         System.out.println("7 - Color");
         System.out.println("8 - show all");
-        System.out.println("9 - few parameters");
+        System.out.println("9 - few parameters\n");
 
         try {
             String input = reader.readLine();
@@ -254,7 +247,6 @@ public class PhoneRun {
                     break;
                 default:
                     System.out.println("Input 'q' to quit.\n");
-//                    searchPhones(reader);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -264,15 +256,12 @@ public class PhoneRun {
 
     private Phone findPhone(BufferedReader reader) {
         String id = "";
-//        System.out.println("Searching phone...");
-
         try {
             System.out.print("Input phone's ID: ");
             id = reader.readLine();
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return controller.findById(Integer.parseInt(id));
     }
 
@@ -368,7 +357,7 @@ public class PhoneRun {
         List<Phone> byColor = new ArrayList<>();
 
         try {
-            System.out.println("\nParameters are: ");
+            System.out.println("Parameters are: ");
             System.out.println("1 - Company name");
             System.out.println("2 - Model");
             System.out.println("3 - Storage memory");
