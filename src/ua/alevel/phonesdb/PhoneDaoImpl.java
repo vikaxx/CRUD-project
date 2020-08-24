@@ -109,10 +109,10 @@ public class PhoneDaoImpl implements PhoneDao {
     }
 
     @Override
-    public List<Phone> findByScreenDiagonalFromTo(double from, double to) {
+    public List<Phone> findByScreenDiagonalFrom(double from) {
         List<Phone> tmpPhones = new ArrayList<>();
         for (Phone currentPhone : phones) {
-            if (currentPhone.getScreenDiagonal() >= from && currentPhone.getScreenDiagonal() <= to) {
+            if (currentPhone.getScreenDiagonal() >= from) {
                 tmpPhones.add(currentPhone);
             }
         }
@@ -121,7 +121,7 @@ public class PhoneDaoImpl implements PhoneDao {
 
     @Override
     public List<Phone> findByScreenDiagonal(double screenDiagonal) {
-        return findByScreenDiagonalFromTo(screenDiagonal, screenDiagonal);
+        return findByScreenDiagonalFrom(screenDiagonal);
     }
 
     @Override

@@ -50,8 +50,8 @@ public class PhoneServiceImpl implements PhoneService {
     }
 
     @Override
-    public List<Phone> findByScreenDiagonalFromTo(double from, double to) {
-        return phoneDao.findByScreenDiagonalFromTo(from, to);
+    public List<Phone> findByScreenDiagonalFrom(double from) {
+        return phoneDao.findByScreenDiagonalFrom(from);
     }
 
     @Override

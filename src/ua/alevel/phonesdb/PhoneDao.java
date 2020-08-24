@@ -13,7 +13,7 @@ public interface PhoneDao {
     List<Phone> findByModel(String model);
     List<Phone> findByStorageMemoryFrom(int storageMemory);
     List<Phone> findByPriceFromTo(int from, int to);
-    List<Phone> findByScreenDiagonalFromTo(double from, double to);
+    List<Phone> findByScreenDiagonalFrom(double from);
     List<Phone> findByScreenDiagonal(double screenDiagonal);
     List<Phone> findByColor(String color);
 

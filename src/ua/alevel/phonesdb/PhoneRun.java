@@ -234,7 +234,7 @@ public class PhoneRun {
                     show(findByPriceFromTo(reader));
                     break;
                 case "5":
-                    show(findByScreenDiagonalFromTo(reader));
+                    show(findByScreenDiagonalFrom(reader));
                     break;
                 case "6":
                     show(findByScreenDiagonal(reader));
@@ -324,19 +324,17 @@ public class PhoneRun {
         return controller.findByPriceFromTo(Integer.parseInt(min), Integer.parseInt(max));
     }
 
-    private List<Phone> findByScreenDiagonalFromTo(BufferedReader reader) {
+    private List<Phone> findByScreenDiagonalFrom(BufferedReader reader) {
         String min = "";
-        String max = "";
 
         try {
             System.out.print("Input minimal phone's screen diagonal: ");
             min = reader.readLine();
-            System.out.print("Input maximal phone's screen diagonal: ");
-            max = reader.readLine();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return controller.findByScreenDiagonalFromTo(Integer.parseInt(min), Integer.parseInt(max));
+        return controller.findByScreenDiagonalFrom(Integer.parseInt(min));
     }
 
     private List<Phone> findByScreenDiagonal(BufferedReader reader) {
@@ -362,7 +360,6 @@ public class PhoneRun {
     }
 
     private List<Phone> findByFewParameters(BufferedReader reader) {
-        String input = "";
         List<Phone> byCompanyName = new ArrayList<>();
         List<Phone> byModel = new ArrayList<>();
         List<Phone> byMemory = new ArrayList<>();
@@ -380,36 +377,43 @@ public class PhoneRun {
             System.out.println("6 - Color");
             System.out.print("\nInput parameters' numbers: ");
 
+            String input = reader.readLine();
 
-            input = reader.readLine();
-
-//            if (input.contains("1")) {
-//                byCompanyName =
-//            }
-//            if (input.contains("2")) {
-//                byModel =
-//            }
-//            if (input.contains("3")) {
-//                byMemory =
-//            }
-//            if (input.contains("4")) {
-//                byPrice =
-//            }
-//            if (input.contains("5")) {
-//                byDiagonal =
-//            }
-//            if (input.contains("6")) {
-//                byColor =
-//            }
-
-
+            if (input.contains("1")) {
+                byCompanyName = findByCompany(reader);
+            } else {
+                byCompanyName = controller.findAll();
+            }
+            if (input.contains("2")) {
+                byModel = findByModel(reader);
+            } else {
+                byModel = controller.findAll();
+            }
+            if (input.contains("3")) {
+                byMemory = findByStorageMemoryFrom(reader);
+            } else {
+                byMemory = controller.findAll();
+            }
+            if (input.contains("4")) {
+                byPrice = findByPriceFromTo(reader);
+            } else {
+                byPrice = controller.findAll();
+            }
+            if (input.contains("5")) {
+                byDiagonal = findByScreenDiagonalFrom(reader);
+            } else {
+                byDiagonal = controller.findAll();
+            }
+            if (input.contains("6")) {
+                byColor = findByColor(reader);
+            } else {
+                byColor = controller.findAll();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return null;
-
+        return controller.fewParameters(byCompanyName, byModel, byMemory, byPrice, byDiagonal, byColor);
     }
-
 
 }

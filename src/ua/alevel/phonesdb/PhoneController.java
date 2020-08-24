@@ -50,8 +50,8 @@ public class PhoneController {
     }
 
      
-    public List<Phone> findByScreenDiagonalFromTo(double from, double to) {
-        return phoneService.findByScreenDiagonalFromTo(from, to);
+    public List<Phone> findByScreenDiagonalFrom(double from) {
+        return phoneService.findByScreenDiagonalFrom(from);
     }
 
      
@@ -67,5 +67,9 @@ public class PhoneController {
      
     public List<Phone> findByColor(String color) {
         return phoneService.findByColor(color);
+    }
+
+    public List<Phone> fewParameters(List<Phone>... PHONES) {
+        return phoneService.fewParameters(PHONES);
     }
 }
