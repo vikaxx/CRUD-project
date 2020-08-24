@@ -153,22 +153,22 @@ public class PhoneDaoImpl implements PhoneDao {
         List<Phone> notReturnPhones = new ArrayList<>();
 
         for (Phone currentPhone : tmpPhones) {
-            if (!byCompanyName.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+            if (!byCompanyName.contains(currentPhone)) {
                 notReturnPhones.add(currentPhone);
             }
-            if (!byModel.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+            if (!byModel.contains(currentPhone)) {
                 notReturnPhones.add(currentPhone);
             }
-            if (!byMemory.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+            if (!byMemory.contains(currentPhone)) {
                 notReturnPhones.add(currentPhone);
             }
-            if (!byPrice.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+            if (!byPrice.contains(currentPhone)) {
                 notReturnPhones.add(currentPhone);
             }
-            if (!byDiagonal.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+            if (!byDiagonal.contains(currentPhone)) {
                 notReturnPhones.add(currentPhone);
             }
-            if (!byColor.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+            if (!byColor.contains(currentPhone)) {
                 notReturnPhones.add(currentPhone);
             }
 
