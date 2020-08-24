@@ -3,6 +3,7 @@ package ua.alevel.phonesdb;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PhoneRun {
@@ -78,12 +79,17 @@ public class PhoneRun {
         controller.create(p3);
         controller.create(p4);
         controller.create(p5);
-        show();
+        showAll();
     }
 
-    private void show() {
+    private void showAll() {
         System.out.println("");
         List<Phone> all = controller.findAll();
+        all.forEach(System.out::println);
+    }
+
+    private void show(List<Phone> all) {
+        System.out.println("");
         all.forEach(System.out::println);
     }
 
@@ -128,7 +134,7 @@ public class PhoneRun {
         }
 
         controller.create(phone);
-        show();
+        showAll();
     }
 
     private void updatePhone(BufferedReader reader) {
@@ -176,7 +182,7 @@ public class PhoneRun {
         }
 
         controller.update(phone);
-        show();
+        showAll();
     }
 
     private void deletePhone(BufferedReader reader) {
@@ -192,7 +198,7 @@ public class PhoneRun {
         }
 
         controller.delete(Integer.parseInt(id));
-        show();
+        showAll();
     }
 
     private void searchPhones(BufferedReader reader) {
@@ -207,36 +213,40 @@ public class PhoneRun {
         System.out.println("6 - Screen diagonal (definite)");
         System.out.println("7 - Color");
         System.out.println("8 - show all");
+        System.out.println("9 - few parameters");
 
         try {
             String input = reader.readLine();
             switch (input) {
                 case "0":
-                    findPhone(reader);
+                    System.out.println(findPhone(reader).toString());
                     break;
                 case "1":
-                    findByCompany(reader);
+                    show(findByCompany(reader));
                     break;
                 case "2":
-                    findByModel(reader);
+                    show(findByModel(reader));
                     break;
                 case "3":
-                    findByStorageMemoryFrom(reader);
+                    show(findByStorageMemoryFrom(reader));
                     break;
                 case "4":
-                    findByPriceFromTo(reader);
+                    show(findByPriceFromTo(reader));
                     break;
                 case "5":
-                    findByScreenDiagonalFromTo(reader);
+                    show(findByScreenDiagonalFromTo(reader));
                     break;
                 case "6":
-                    findByScreenDiagonal(reader);
+                    show(findByScreenDiagonal(reader));
                     break;
                 case "7":
-                    findByColor(reader);
+                    show(findByColor(reader));
                     break;
                 case "8":
-                    show();
+                    showAll();
+                    break;
+                case "9":
+                    show(findByFewParameters(reader));
                     break;
                 case "q":
                     System.out.println("Exit!");
@@ -252,7 +262,7 @@ public class PhoneRun {
 
     }
 
-    private void findPhone(BufferedReader reader) {
+    private Phone findPhone(BufferedReader reader) {
         String id = "";
 //        System.out.println("Searching phone...");
 
@@ -263,10 +273,10 @@ public class PhoneRun {
             e.printStackTrace();
         }
 
-        System.out.println(controller.findById(Integer.parseInt(id)).toString());
+        return controller.findById(Integer.parseInt(id));
     }
 
-    private void findByCompany(BufferedReader reader) {
+    private List<Phone> findByCompany(BufferedReader reader) {
         String company = "";
         try {
             System.out.print("Input phone's company name: ");
@@ -274,13 +284,10 @@ public class PhoneRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("");
-        List<Phone> all = controller.findByCompany(company);
-        all.forEach(System.out::println);
+        return controller.findByCompany(company);
     }
 
-    private void findByModel(BufferedReader reader) {
+    private List<Phone> findByModel(BufferedReader reader) {
         String model = "";
         try {
             System.out.print("Input phone's model name: ");
@@ -288,13 +295,10 @@ public class PhoneRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("");
-        List<Phone> all = controller.findByModel(model);
-        all.forEach(System.out::println);
+        return controller.findByModel(model);
     }
 
-    private void findByStorageMemoryFrom(BufferedReader reader) {
+    private List<Phone> findByStorageMemoryFrom(BufferedReader reader) {
         String storageMemory = "";
         try {
             System.out.print("Input minimal phone's storage memory: ");
@@ -302,13 +306,10 @@ public class PhoneRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("");
-        List<Phone> all = controller.findByStorageMemoryFrom(Integer.parseInt(storageMemory));
-        all.forEach(System.out::println);
+        return controller.findByStorageMemoryFrom(Integer.parseInt(storageMemory));
     }
 
-    private void findByPriceFromTo(BufferedReader reader) {
+    private List<Phone> findByPriceFromTo(BufferedReader reader) {
         String min = "";
         String max = "";
 
@@ -320,14 +321,10 @@ public class PhoneRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("");
-        List<Phone> all = controller.findByPriceFromTo(Integer.parseInt(min), Integer.parseInt(max));
-        all.forEach(System.out::println);
-
+        return controller.findByPriceFromTo(Integer.parseInt(min), Integer.parseInt(max));
     }
 
-    private void findByScreenDiagonalFromTo(BufferedReader reader) {
+    private List<Phone> findByScreenDiagonalFromTo(BufferedReader reader) {
         String min = "";
         String max = "";
 
@@ -339,13 +336,10 @@ public class PhoneRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("");
-        List<Phone> all = controller.findByScreenDiagonalFromTo(Integer.parseInt(min), Integer.parseInt(max));
-        all.forEach(System.out::println);
+        return controller.findByScreenDiagonalFromTo(Integer.parseInt(min), Integer.parseInt(max));
     }
 
-    private void findByScreenDiagonal(BufferedReader reader) {
+    private List<Phone> findByScreenDiagonal(BufferedReader reader) {
         String screenDiagonal = "";
         try {
             System.out.print("Input phone's screen diagonal: ");
@@ -353,13 +347,10 @@ public class PhoneRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-        System.out.println("");
-        List<Phone> all = controller.findByScreenDiagonal(Double.parseDouble(screenDiagonal));
-        all.forEach(System.out::println);
+        return controller.findByScreenDiagonal(Double.parseDouble(screenDiagonal));
     }
 
-    private void findByColor(BufferedReader reader) {
+    private List<Phone> findByColor(BufferedReader reader) {
         String color = "";
         try {
             System.out.print("Input phone's color: ");
@@ -367,10 +358,57 @@ public class PhoneRun {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        return controller.findByColor(color);
+    }
 
-        System.out.println("");
-        List<Phone> all = controller.findByColor(color);
-        all.forEach(System.out::println);
+    private List<Phone> findByFewParameters(BufferedReader reader) {
+        String input = "";
+        List<Phone> byCompanyName = new ArrayList<>();
+        List<Phone> byModel = new ArrayList<>();
+        List<Phone> byMemory = new ArrayList<>();
+        List<Phone> byPrice = new ArrayList<>();
+        List<Phone> byDiagonal = new ArrayList<>();
+        List<Phone> byColor = new ArrayList<>();
+
+        try {
+            System.out.println("\nParameters are: ");
+            System.out.println("1 - Company name");
+            System.out.println("2 - Model");
+            System.out.println("3 - Storage memory");
+            System.out.println("4 - Price");
+            System.out.println("5 - Screen diagonal (range)");
+            System.out.println("6 - Color");
+            System.out.print("\nInput parameters' numbers: ");
+
+
+            input = reader.readLine();
+
+//            if (input.contains("1")) {
+//                byCompanyName =
+//            }
+//            if (input.contains("2")) {
+//                byModel =
+//            }
+//            if (input.contains("3")) {
+//                byMemory =
+//            }
+//            if (input.contains("4")) {
+//                byPrice =
+//            }
+//            if (input.contains("5")) {
+//                byDiagonal =
+//            }
+//            if (input.contains("6")) {
+//                byColor =
+//            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+
     }
 
 

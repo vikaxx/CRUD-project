@@ -8,13 +8,6 @@ public interface PhoneService {
     void delete (int id);
     Phone findById(int id);
 
-//    private String companyName;
-//    private String model;
-//    private int storageMemory;
-//    private double price;
-//    private double screenDiagonal;
-//    private String color;
-
     List<Phone> findAll();
     List<Phone> findByCompany(String companyName);
     List<Phone> findByModel(String model);
@@ -24,10 +17,5 @@ public interface PhoneService {
     List<Phone> findByScreenDiagonal(double screenDiagonal);
     List<Phone> findByColor(String color);
 
-//    List<Phone> findByCompanyAndModel(String companyName, String model);
-//    List<Phone> findByCompanyAndModelAndColor(String companyName, String model, String color);
-//    List<Phone> findByCompanyAndPriceFromTo(String companyName, int from, int to);
-//    List<Phone> findByPriceAndColor(int from, int to, String color);
-//    List<Phone> findByCompanyAndScreenDiagonal(String companyName, double screenDiagonal);
-//    List<Phone> findByPriceAndScreenDiagonal(int from, int to, double screenDiagonal);
+    public List<Phone> fewParameters(List<Phone>... PHONES);
 }

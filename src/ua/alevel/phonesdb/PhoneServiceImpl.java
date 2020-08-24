@@ -68,4 +68,9 @@ public class PhoneServiceImpl implements PhoneService {
     public List<Phone> findByColor(String color) {
         return phoneDao.findByColor(color);
     }
+
+    @Override
+    public List<Phone> fewParameters(List<Phone>... PHONES) {
+        return phoneDao.fewParameters(PHONES);
+    }
 }
