@@ -147,14 +147,16 @@ public class PhoneDaoImpl implements PhoneDao {
     }
 
     public List<Phone> fewParameters(List<Phone>... PHONES) {
-        List<Phone> tmpPhones = phones;
+        List<Phone> tmpPhones = findAll();
+        List<Phone> notReturnPhones = new ArrayList<>();
         for (Phone currentPhone : tmpPhones) {
             for (int i = 0; i < PHONES.length; i++) {
                 if (!PHONES[i].contains(currentPhone)) {
-                    tmpPhones.remove(currentPhone);
+                    notReturnPhones.add(currentPhone);
                 }
             }
         }
+        tmpPhones.removeAll(notReturnPhones);
         return tmpPhones;
     }
 

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcfaaea1-7f13-43ec-b05f-eba537a3dfd4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneController.java" afterPath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneController.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java" afterPath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java" />
       <change beforePath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java" afterPath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneRun.java" afterPath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneRun.java" />
       <change beforePath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java" afterPath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java" />
-      <change beforePath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneServiceImpl.java" afterPath="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneServiceImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +20,8 @@
       <file leaf-file-name="PhoneController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="52" column="62" lean-forward="false" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+            <state relative-caret-position="312">
+              <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="e#368#369#0" expanded="true" />
                 <element signature="e#410#411#0" expanded="true" />
@@ -39,21 +37,20 @@
                 <element signature="e#908#909#0" expanded="true" />
                 <element signature="e#976#977#0" expanded="true" />
                 <element signature="e#1039#1040#0" expanded="true" />
+                <element signature="e#1109#1110#0" expanded="true" />
                 <element signature="e#1175#1176#0" expanded="true" />
                 <element signature="e#1530#1531#0" expanded="true" />
                 <element signature="e#1584#1585#0" expanded="true" />
-                <element signature="e#1647#1648#0" expanded="true" />
-                <element signature="e#1704#1705#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneRun.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PhoneRun.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="411" column="33" lean-forward="true" selection-start-line="411" selection-start-column="33" selection-end-line="411" selection-end-column="33" />
+            <state relative-caret-position="299">
+              <caret line="417" column="0" lean-forward="true" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#run#0;class#PhoneRun#0" expanded="false" />
@@ -64,23 +61,16 @@
                 <element signature="method#updatePhone#0;class#PhoneRun#0" expanded="false" />
                 <element signature="e#4382#4423#0" expanded="false" />
                 <element signature="method#deletePhone#0;class#PhoneRun#0" expanded="false" />
-                <element signature="method#findPhone#0;class#PhoneRun#0" expanded="false" />
-                <element signature="method#findByCompany#0;class#PhoneRun#0" expanded="false" />
-                <element signature="method#findByModel#0;class#PhoneRun#0" expanded="false" />
-                <element signature="method#findByStorageMemoryFrom#0;class#PhoneRun#0" expanded="false" />
-                <element signature="method#findByScreenDiagonalFrom#0;class#PhoneRun#0" expanded="false" />
-                <element signature="method#findByScreenDiagonal#0;class#PhoneRun#0" expanded="false" />
-                <element signature="method#findByColor#0;class#PhoneRun#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneDaoImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PhoneDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2356">
-              <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+            <state relative-caret-position="362">
+              <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#233#234#0" expanded="true" />
@@ -97,8 +87,8 @@
       <file leaf-file-name="PhoneServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-111">
-              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            <state relative-caret-position="369">
+              <caret line="73" column="44" lean-forward="false" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
               <folding>
                 <element signature="e#386#387#0" expanded="true" />
                 <element signature="e#424#425#0" expanded="true" />
@@ -118,8 +108,6 @@
                 <element signature="e#1217#1218#0" expanded="true" />
                 <element signature="e#1588#1589#0" expanded="true" />
                 <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1715#1716#0" expanded="true" />
-                <element signature="e#1768#1769#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -148,8 +136,8 @@
       <file leaf-file-name="PhoneService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+            <state relative-caret-position="323">
+              <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -158,8 +146,8 @@
       <file leaf-file-name="PhoneDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="304">
+              <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -188,7 +176,6 @@
       <replace>tmpPhones</replace>
       <replace />
       <replace>Service</replace>
-      <replace>Service</replace>
       <replace>reader</replace>
     </replaceStrings>
   </component>
@@ -205,12 +192,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/Main.java" />
         <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/Phone.java" />
-        <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java" />
-        <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java" />
         <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneController.java" />
         <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneRun.java" />
+        <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java" />
+        <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java" />
+        <option value="$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -411,7 +398,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29284525" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.074875206" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -465,34 +452,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="15" column="52" lean-forward="false" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        <state relative-caret-position="361">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2356">
-          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#1943#1944#0" expanded="true" />
-            <element signature="e#1972#1973#0" expanded="true" />
-            <element signature="e#3404#3405#0" expanded="true" />
-            <element signature="e#3467#3468#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-111">
-          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        <state relative-caret-position="407">
+          <caret line="75" column="100" lean-forward="false" selection-start-line="75" selection-start-column="100" selection-end-line="75" selection-end-column="100" />
           <folding>
             <element signature="e#386#387#0" expanded="true" />
             <element signature="e#424#425#0" expanded="true" />
@@ -512,24 +491,14 @@
             <element signature="e#1217#1218#0" expanded="true" />
             <element signature="e#1588#1589#0" expanded="true" />
             <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#1768#1769#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="52" column="62" lean-forward="false" selection-start-line="52" selection-start-column="62" selection-end-line="52" selection-end-column="62" />
+        <state relative-caret-position="312">
+          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
           <folding>
             <element signature="e#368#369#0" expanded="true" />
             <element signature="e#410#411#0" expanded="true" />
@@ -545,19 +514,18 @@
             <element signature="e#908#909#0" expanded="true" />
             <element signature="e#976#977#0" expanded="true" />
             <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
             <element signature="e#1175#1176#0" expanded="true" />
             <element signature="e#1530#1531#0" expanded="true" />
             <element signature="e#1584#1585#0" expanded="true" />
-            <element signature="e#1647#1648#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="411" column="33" lean-forward="true" selection-start-line="411" selection-start-column="33" selection-end-line="411" selection-end-column="33" />
+        <state relative-caret-position="502">
+          <caret line="414" column="0" lean-forward="true" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#run#0;class#PhoneRun#0" expanded="false" />
@@ -568,13 +536,149 @@
             <element signature="method#updatePhone#0;class#PhoneRun#0" expanded="false" />
             <element signature="e#4382#4423#0" expanded="false" />
             <element signature="method#deletePhone#0;class#PhoneRun#0" expanded="false" />
-            <element signature="method#findPhone#0;class#PhoneRun#0" expanded="false" />
-            <element signature="method#findByCompany#0;class#PhoneRun#0" expanded="false" />
-            <element signature="method#findByModel#0;class#PhoneRun#0" expanded="false" />
-            <element signature="method#findByStorageMemoryFrom#0;class#PhoneRun#0" expanded="false" />
-            <element signature="method#findByScreenDiagonalFrom#0;class#PhoneRun#0" expanded="false" />
-            <element signature="method#findByScreenDiagonal#0;class#PhoneRun#0" expanded="false" />
-            <element signature="method#findByColor#0;class#PhoneRun#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <element signature="e#3404#3405#0" expanded="true" />
+            <element signature="e#3467#3468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/Phone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="16" column="122" lean-forward="false" selection-start-line="16" selection-start-column="122" selection-end-line="16" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="73" column="44" lean-forward="false" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+          <folding>
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#1018#1019#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+            <element signature="e#1588#1589#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+          <folding>
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#532#533#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1039#1040#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="42" lean-forward="true" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="60" lean-forward="true" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneRun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="417" column="0" lean-forward="true" selection-start-line="417" selection-start-column="0" selection-end-line="417" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#run#0;class#PhoneRun#0" expanded="false" />
+            <element signature="method#createSomeBase#0;class#PhoneRun#0" expanded="false" />
+            <element signature="method#showAll#0;class#PhoneRun#0" expanded="false" />
+            <element signature="method#show#0;class#PhoneRun#0" expanded="false" />
+            <element signature="method#addPhone#0;class#PhoneRun#0" expanded="false" />
+            <element signature="method#updatePhone#0;class#PhoneRun#0" expanded="false" />
+            <element signature="e#4382#4423#0" expanded="false" />
+            <element signature="method#deletePhone#0;class#PhoneRun#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/alevel/phonesdb/PhoneDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="159" column="25" lean-forward="true" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <element signature="e#3404#3405#0" expanded="true" />
+            <element signature="e#3467#3468#0" expanded="true" />
           </folding>
         </state>
       </provider>

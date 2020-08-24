@@ -17,5 +17,5 @@ public interface PhoneService {
     List<Phone> findByScreenDiagonal(double screenDiagonal);
     List<Phone> findByColor(String color);
 
-    public List<Phone> fewParameters(List<Phone>... PHONES);
+    List<Phone> fewParameters(List<Phone>... PHONES);
 }
