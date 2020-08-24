@@ -203,7 +203,7 @@ public class PhoneRun {
 
     private void searchPhones(BufferedReader reader) {
         System.out.println("Searching phones...");
-        System.out.println("\nChoose criteria, please: ");
+        System.out.println("Choose criteria, please: ");
         System.out.println("0 - Phone's ID");
         System.out.println("1 - Company name");
         System.out.println("2 - Model");
@@ -213,7 +213,7 @@ public class PhoneRun {
         System.out.println("6 - Screen diagonal (definite)");
         System.out.println("7 - Color");
         System.out.println("8 - show all");
-        System.out.println("9 - few parameters");
+        System.out.println("9 - few parameters\n");
 
         try {
             String input = reader.readLine();
@@ -368,7 +368,7 @@ public class PhoneRun {
         List<Phone> byColor = new ArrayList<>();
 
         try {
-            System.out.println("\nParameters are: ");
+            System.out.println("Parameters are: ");
             System.out.println("1 - Company name");
             System.out.println("2 - Model");
             System.out.println("3 - Storage memory");

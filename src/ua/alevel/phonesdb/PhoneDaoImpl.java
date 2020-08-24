@@ -146,15 +146,34 @@ public class PhoneDaoImpl implements PhoneDao {
         return tmpPhones;
     }
 
-    public List<Phone> fewParameters(List<Phone>... PHONES) {
+    public List<Phone> fewParameters(List<Phone> byCompanyName, List<Phone> byModel,
+                                     List<Phone> byMemory, List<Phone> byPrice,
+                                     List<Phone> byDiagonal, List<Phone> byColor) {
         List<Phone> tmpPhones = phones;
+        List<Phone> notReturnPhones = new ArrayList<>();
+
         for (Phone currentPhone : tmpPhones) {
-            for (int i = 0; i < PHONES.length; i++) {
-                if (!PHONES[i].contains(currentPhone)) {
-                    tmpPhones.remove(currentPhone);
-                }
+            if (!byCompanyName.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+                notReturnPhones.add(currentPhone);
             }
+            if (!byModel.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+                notReturnPhones.add(currentPhone);
+            }
+            if (!byMemory.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+                notReturnPhones.add(currentPhone);
+            }
+            if (!byPrice.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+                notReturnPhones.add(currentPhone);
+            }
+            if (!byDiagonal.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+                notReturnPhones.add(currentPhone);
+            }
+            if (!byColor.contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+                notReturnPhones.add(currentPhone);
+            }
+
         }
+        tmpPhones.removeAll(notReturnPhones);
         return tmpPhones;
     }
 

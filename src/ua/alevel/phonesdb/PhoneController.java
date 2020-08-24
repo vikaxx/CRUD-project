@@ -69,7 +69,9 @@ public class PhoneController {
         return phoneService.findByColor(color);
     }
 
-    public List<Phone> fewParameters(List<Phone>... PHONES) {
-        return phoneService.fewParameters(PHONES);
+    public List<Phone> fewParameters(List<Phone> byCompanyName, List<Phone> byModel,
+                                     List<Phone> byMemory, List<Phone> byPrice,
+                                     List<Phone> byDiagonal, List<Phone> byColor) {
+        return phoneService.fewParameters(byCompanyName, byModel, byMemory, byPrice, byDiagonal, byColor);
     }
 }

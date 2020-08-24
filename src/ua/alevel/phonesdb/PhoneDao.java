@@ -17,5 +17,7 @@ public interface PhoneDao {
     List<Phone> findByScreenDiagonal(double screenDiagonal);
     List<Phone> findByColor(String color);
 
-    public List<Phone> fewParameters(List<Phone>... PHONES);
+    List<Phone> fewParameters(List<Phone> byCompanyName, List<Phone> byModel,
+                                     List<Phone> byMemory, List<Phone> byPrice,
+                                     List<Phone> byDiagonal, List<Phone> byColor);
 }

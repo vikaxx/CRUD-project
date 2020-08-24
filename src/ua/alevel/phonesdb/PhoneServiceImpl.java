@@ -70,7 +70,9 @@ public class PhoneServiceImpl implements PhoneService {
     }
 
     @Override
-    public List<Phone> fewParameters(List<Phone>... PHONES) {
-        return phoneDao.fewParameters(PHONES);
+    public List<Phone> fewParameters(List<Phone> byCompanyName, List<Phone> byModel,
+                                     List<Phone> byMemory, List<Phone> byPrice,
+                                     List<Phone> byDiagonal, List<Phone> byColor) {
+        return phoneDao.fewParameters(byCompanyName, byModel, byMemory, byPrice, byDiagonal, byColor);
     }
 }
