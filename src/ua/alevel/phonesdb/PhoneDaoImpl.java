@@ -151,8 +151,10 @@ public class PhoneDaoImpl implements PhoneDao {
         List<Phone> notReturnPhones = new ArrayList<>();
         for (Phone currentPhone : phones) {
             for (int i = 0; i < PHONES.length; i++) {
-                if (!PHONES[i].contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
-                    notReturnPhones.add(currentPhone);
+                if (!PHONES[i].isEmpty()) {
+                    if (!PHONES[i].contains(currentPhone) && !notReturnPhones.contains(currentPhone)) {
+                        notReturnPhones.add(currentPhone);
+                    }
                 }
             }
         }

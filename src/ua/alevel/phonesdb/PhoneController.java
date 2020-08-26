@@ -8,8 +8,6 @@ public class PhoneController {
 
      
     public void create(Phone phone) {
-//        int size = phoneService.findAll().size();
-//        phone.setID(++size);
         phoneService.create(phone);
     }
 

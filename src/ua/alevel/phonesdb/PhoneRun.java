@@ -371,32 +371,32 @@ public class PhoneRun {
             if (input.contains("1")) {
                 byCompanyName = findByCompany(reader);
             } else {
-                byCompanyName = controller.findAll();
+                byCompanyName.clear();
             }
             if (input.contains("2")) {
                 byModel = findByModel(reader);
             } else {
-                byModel = controller.findAll();
+                byModel.clear();
             }
             if (input.contains("3")) {
                 byMemory = findByStorageMemoryFrom(reader);
             } else {
-                byMemory = controller.findAll();
+                byMemory.clear();
             }
             if (input.contains("4")) {
                 byPrice = findByPriceFromTo(reader);
             } else {
-                byPrice = controller.findAll();
+                byPrice.clear();
             }
             if (input.contains("5")) {
                 byDiagonal = findByScreenDiagonalFrom(reader);
             } else {
-                byDiagonal = controller.findAll();
+                byDiagonal.clear();
             }
             if (input.contains("6")) {
                 byColor = findByColor(reader);
             } else {
-                byColor = controller.findAll();
+                byColor.clear();
             }
         } catch (IOException e) {
             e.printStackTrace();
