@@ -121,7 +121,13 @@ public class PhoneDaoImpl implements PhoneDao {
 
     @Override
     public List<Phone> findByScreenDiagonal(double screenDiagonal) {
-        return findByScreenDiagonalFrom(screenDiagonal);
+        List<Phone> tmpPhones = new ArrayList<>();
+        for (Phone currentPhone : phones) {
+            if (currentPhone.getScreenDiagonal() == screenDiagonal) {
+                tmpPhones.add(currentPhone);
+            }
+        }
+        return tmpPhones;
     }
 
     @Override
